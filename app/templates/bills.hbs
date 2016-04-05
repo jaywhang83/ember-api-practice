@@ -1,0 +1,5 @@
+<ul>
+  {{#each model as |bill|}}
+    <li>{{#link-to 'committee' committee.committee_id}}{{bill.official_title}}, Introduced on: {{bill.introduced_on}}{{/link-to}}</li><br>
+  {{/each}}
+</ul>
