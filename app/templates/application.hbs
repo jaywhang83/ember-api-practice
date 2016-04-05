@@ -1,5 +1,32 @@
-<h2 id="title">Welcome to Ember</h2>
-{{#link-to 'upcoming-votes'}}Upcoming Votes{{/link-to}}
-{{#link-to 'index'}}Home{{/link-to}}
-{{#link-to 'bills'}}Bills{{/link-to}}
-{{outlet}}
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <div class="navbar-header">
+
+      <div class="nav navbar-nav navbar-right">
+        <a class="navbar-brand" href="/">Enlightened Citizenry</a>
+
+        {{#bs-dropdown}}
+        {{#bs-dropdown-button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"}}
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          {{/bs-dropdown-button}}
+          {{#bs-dropdown-menu}}
+          {{#link-to 'upcoming-votes'}}Upcoming Votes{{/link-to}}
+          {{#link-to 'index'}}Home{{/link-to}}
+          {{#link-to 'bills'}}Bills{{/link-to}}
+          {{/bs-dropdown-menu}}
+          {{/bs-dropdown}}
+
+</div>
+</div><!-- /.navbar-collapse -->
+</nav>
+</div><!-- /.container-fluid -->
+
+<div class="container">
+  {{outlet}}
+</div>
