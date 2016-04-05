@@ -1,0 +1,7 @@
+<ul>
+  {{#each model as |sponsor|}}
+    <li> {{sponsor.title}} {{sponsor.first_name}} {{sponsor.last_name}}</li>
+    <li>Contact: <a href=  {{sponsor.contact_form}}>{{sponsor.contact_form}}</a></li>
+    <li>Email: <a href=  {{sponsor.oc_email}}>{{sponsor.oc_email}}</a></li>
+  {{/each}}
+</ul>

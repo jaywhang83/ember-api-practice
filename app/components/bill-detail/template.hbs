@@ -3,7 +3,7 @@
     <li> {{bill.official_title}}</li>
     <li> {{bill.summary}}</li>
     <li> {{bill.introduced_on}}</li>
-    <li> Sponsor: {{bill.sponsor.title}}.  {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</li>
+    <li> Sponsor: {{#link-to 'sponsor-detail' bill.sponsor}}{{bill.sponsor.title}}.  {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}{{bill.sponsor.bioguide_id}}{{/link-to}}</li>
     {{#each bill.committees as |committee|}}
     <li> {{committee.committee.name}}</li>
     {{/each}}

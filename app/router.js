@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('bills');
   this.route('bill-detail', {path: '/bill-detail/:bill_id'});
   this.route('upcoming-votes');
+  this.route('sponsor-detail', {path: '/sponsor-detail/:bioguide_id'});
 });
 
 export default Router;
